@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện ảnh tương tác - Thư viện Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Khung hiển thị ảnh xem trước lớn -->
+    <div id="image">
+        Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.
+    </div>
+
+    <!-- Danh sách các hình ảnh thu nhỏ -->
+    <div class="gallery">
+        <img class="preview" 
+             alt="Cảnh bình minh trên biển" 
+             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/388670/sunflower.jpg" 
+             onmouseover="upDate(this)" 
+             onmouseout="unDo()">
+
+        <img class="preview" 
+             alt="Cánh đồng hoa hướng dương" 
+             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/388670/blooming-blossom-flora-45910.jpg" 
+             onmouseover="upDate(this)" 
+             onmouseout="unDo()">
+
+        <img class="preview" 
+             alt="Rừng cây mùa thu rực rỡ" 
+             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/388670/water-drop-leaf-nature-35325.jpg" 
+             onmouseover="upDate(this)" 
+             onmouseout="unDo()">
+    </div>
+
+</body>
+</html>

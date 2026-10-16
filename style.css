@@ -1,0 +1,47 @@
+/* Trình bày giao diện trang web */
+body {
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Kiểu dáng cho khung hiển thị ảnh lớn bên trên */
+#image {
+    line-height: 300px;
+    width: 575px;
+    height: 300px;
+    border: 5px solid #333;
+    margin: 0 auto 20px auto;
+    background-color: #8e8e8e;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-size: 125%;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Kiểu dáng cho các hình ảnh xem trước bên dưới */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.preview {
+    width: 150px;
+    height: 100px;
+    border: 3px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.preview:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+}
